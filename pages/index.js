@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
 export async function getServerSideProps(context) {
   
@@ -32,6 +33,11 @@ export default function Home({ data }) {
         </p>
 
       </main>
+      <footer className={styles.footer}>
+        <Link href="https://www.micahwalter.com">
+          <a>micahwalter.com</a>
+        </Link>      
+      </footer>
     </div>
   )
 }
